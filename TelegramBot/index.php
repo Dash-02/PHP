@@ -9,8 +9,8 @@ require_once 'functions.php';
 
 $event = json_decode($GET_INPUT, 1);
 
-if (mb_strtolower($event['message']['text']) == 'селям' || $event['message']['text'] == 'селям алейкум') {
-    $autoAnswer = 'Алейкум селям!';
+if (mb_strtolower($event['message']['text']) == 'привет' || $event['message']['text'] == 'здравствуй') {
+    $autoAnswer = 'Привет!';
 } else {
     $autoAnswer = 'Я не знаю, что значит' . $event['message']['text'] . "?\n Плохо понимаю человеческий язык(";
 }
